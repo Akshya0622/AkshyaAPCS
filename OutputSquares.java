@@ -1,5 +1,5 @@
 /* Name: Akshya Subbaraman
-* Purpose: Output squares of numbers 1-10
+* Purpose: Chapter 2 Exercise 2. Output squares of numbers 1-10
 * Pseudocode:
      i = 1, { j = 0, x = 0 + 0 + (0 + 1) = 1 } -> exit j loop (still inside i loop), print out 1.
      i = 2, { j = 1, x = 1 + 1 + (1 + 1) = 4 } -> exit j loop (still inside i loop), print out 4.
