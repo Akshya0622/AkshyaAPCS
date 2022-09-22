@@ -9,7 +9,7 @@ The horizontal line loop prints out the bottom of the staircase at a length that
 9/21/22- Printed out person and the long vertical line for the back of the staircase by editing the space count.
 */
 public class ASCIIstair {
-    public static final int stairCase = 7; // class constant controls the number of stairs
+    public static final int stairCase = 6; // class constant controls the number of stairs
 
     public static void main(String[] args) {
         for (int line = stairCase; line >= 1; line--) {
@@ -55,7 +55,7 @@ public class ASCIIstair {
             System.out.print(" ");
         } // prints out spaces
 
-        for(int horizontalLine = 0; horizontalLine <= (8 * stairCase) - 1 ; horizontalLine++) {
+        for(int horizontalLine = 0; horizontalLine <= (7 * stairCase) + 6 ; horizontalLine++) {
             System.out.print("*");
         } // prints out horizontal line for the bottom of the staircase
 
