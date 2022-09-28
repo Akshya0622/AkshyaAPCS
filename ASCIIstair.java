@@ -1,5 +1,5 @@
 /* Name: Akshya Subbaraman
-* Purpose: CH 2 - Project 4. Write a program that produces the ASCII stair output.
+* Purpose: Ch 2 Project 4. Write a program that produces the ASCII stair output.
 Use a class constant to make it possible to change the number of stairs in the figure.
 * Pseudocode: Line loop controls the number of times the stairs are constructed.
 Spaces loop creates a number of spaces so that the head and stars get printed at the correct location.
@@ -9,7 +9,7 @@ The horizontal line loop prints out the bottom of the staircase at a length that
 9/21/22- Printed out person and the long vertical line for the back of the staircase by editing the space count.
 */
 public class ASCIIstair {
-    public static final int stairCase = 8; // class constant controls the number of stairs
+    public static final int stairCase = 7; // class constant controls the number of stairs
 
     public static void main(String[] args) {
         for (int line = stairCase; line >= 1; line--) {

@@ -1,5 +1,5 @@
 /* Name: Akshya Subbaraman
-* Purpose: Chapter 2 Exercise 3. Write a for loop that computes the first 12 Fibonacci numbers
+* Purpose: Ch 2 Exercise 3. Write a for loop that computes the first 12 Fibonacci numbers
 * Pseudocode:
                 firstNum = 1 secondNum = 0
                 (i = 1) fib = firstNum + secondNum = 1 + 0 = 1
