@@ -16,13 +16,15 @@ public class Repl {
         Scanner r = new Scanner(System.in);
         int reps = r.nextInt();
 
-        repl(word,reps);
+        System.out.print(repl(word,reps));
     }
 
-    public static void repl(String word, int reps) {
+    public static String repl(String word, int reps) {
+        String returnWord = "";
         for(int i = 0; i<reps; i++ ) {
 
-            System.out.print(word);
+            returnWord = returnWord + word;
         }
+        return returnWord;
     }
 }

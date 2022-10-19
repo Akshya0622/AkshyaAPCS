@@ -9,21 +9,24 @@ import java.util.*;
 public class Triangle {
     public static void main (String [] args) {
 
-        System.out.print("Side 1 length: ");
-        Scanner a = new Scanner(System.in);
-        double sideA = a.nextDouble();
-        System.out.print("Side 2 length: ");
-        Scanner b = new Scanner(System.in);
-        double sideB = b.nextDouble();
-        System.out.print("Side 3 length: ");
-        Scanner c = new Scanner(System.in);
-        double sideC = c.nextDouble();
+        while (true) {
+            System.out.print("\nSide 1 length: ");
+            Scanner a = new Scanner(System.in);
+            double sideA = a.nextDouble();
+            System.out.print("Side 2 length: ");
+            Scanner b = new Scanner(System.in);
+            double sideB = b.nextDouble();
+            System.out.print("Side 3 length: ");
+            Scanner c = new Scanner(System.in);
+            double sideC = c.nextDouble();
 
-        angles(sideA, sideB, sideC);
+            angles(sideA, sideB, sideC);
+        }
+
     }
 
     public static void angles(double sideA, double sideB, double sideC) {
-        if (sideA + sideB > sideC && sideC > sideB && sideC > sideA) {
+        if ((sideA + sideB > sideC) && (sideC > sideB) && (sideC > sideA)) {
 
             double angleA = Math.acos((Math.pow(sideB, 2) + Math.pow(sideC, 2) - Math.pow(sideA, 2)) / (2 * sideB * sideC));
             double angleB = Math.acos((Math.pow(sideA, 2) + Math.pow(sideC, 2) - Math.pow(sideB, 2)) / (2 * sideA * sideC));
@@ -32,7 +35,7 @@ public class Triangle {
             System.out.print("Angle 1: " + angleA + " Angle 2: " + angleB + " Angle 3: " + angleC );
 
         }
-        else if (sideA + sideC > sideB && sideB > sideA && sideB > sideC) {
+        else if ((sideA + sideC > sideB) && (sideB > sideA) && (sideB > sideC)) {
 
             double angleA = Math.acos((Math.pow(sideB, 2) + Math.pow(sideC, 2) - Math.pow(sideA, 2)) / (2 * sideB * sideC));
             double angleB = Math.acos((Math.pow(sideA, 2) + Math.pow(sideC, 2) - Math.pow(sideB, 2)) / (2 * sideA * sideC));
@@ -40,7 +43,7 @@ public class Triangle {
 
             System.out.print("Angle 1: " + angleA + " Angle 2: " + angleB + " Angle 3: " + angleC );
         }
-        else if (sideB + sideC > sideA && sideA > sideB && sideA > sideC) {
+        else if ((sideB + sideC > sideA) && (sideA > sideB) && (sideA > sideC)) {
 
             double angleA = Math.acos((Math.pow(sideB, 2) + Math.pow(sideC, 2) - Math.pow(sideA, 2)) / (2 * sideB * sideC));
             double angleB = Math.acos((Math.pow(sideA, 2) + Math.pow(sideC, 2) - Math.pow(sideB, 2)) / (2 * sideA * sideC));

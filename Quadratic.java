@@ -9,17 +9,22 @@ import java.util.*;
 public class Quadratic {
 
     public static void main(String [] args) {
-        System.out.print("a value: ");
-        Scanner a = new Scanner(System.in); // user enters a value
-        double aa = a.nextDouble();
-        System.out.print("b value: ");
-        Scanner b = new Scanner(System.in); // user enters b value
-        double bb = b.nextDouble();
-        System.out.print("c value: ");
-        Scanner c = new Scanner(System.in); // user enters c value
-        double cc = c.nextDouble();
+        while (true) {
 
-        quadratic(aa, bb, cc);
+            System.out.print("\na value: ");
+            Scanner a = new Scanner(System.in); // user enters a value
+            double aa = a.nextDouble();
+            System.out.print("b value: ");
+            Scanner b = new Scanner(System.in); // user enters b value
+            double bb = b.nextDouble();
+            System.out.print("c value: ");
+            Scanner c = new Scanner(System.in); // user enters c value
+            double cc = c.nextDouble();
+
+            quadratic(aa, bb, cc);
+        }
+
+
     }
 
     public static void quadratic (double a, double b, double c) {
@@ -28,7 +33,7 @@ public class Quadratic {
             System.out.println("no:(");
         }
 
-        else if (Math.pow(b,2) - (4 * a * c) > 0) {
+        else if (Math.pow(b,2) - (4 * a * c) >= 0) {
 
             double roots1 = (-b + Math.sqrt((Math.pow(b,2))-(4 * a * c))) / (2 * a); // quadratic formula
             double roots2 = (-b - Math.sqrt((Math.pow(b,2))-(4 * a * c))) / (2 * a); // quadratic formula
